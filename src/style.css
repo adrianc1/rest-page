@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background: url('./image.jpg');
+}
+
+h1 {
+    color: red;   
+}
+.menu-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 600px;
+    width: 600px;
+    background-color: darkorchid;
+    border: 2px solid red;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 600px;
+    width: 600px;
+    background-color: darkcyan;
+    border: 2px solid yellow;
+}
+
+.home-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 600px;
+    width: 600px;
+    background-color: darkkhaki;
+    border: 2px solid blue;
+}
+.hidden {
+    display: none;
+}
