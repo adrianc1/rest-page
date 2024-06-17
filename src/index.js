@@ -6,7 +6,6 @@ import mainPage from './init.js';
 mainPage();
 
 export function btnAction(e) {
-    console.log(e.target.id);
     let currentBtnId = e.target.id;
 
     if ( currentBtnId == "Menu") {
@@ -23,10 +22,11 @@ export function btnAction(e) {
         clear();
         aboutPage().renderContent();
     }
+
+    function clear() {
+        const content = document.getElementById('content');
+        content.removeAttribute('class');
+        content.classList.add('hidden');
+    }
 }
 
-function clear() {
-    const content = document.getElementById('content');
-    content.removeAttribute('class');
-    content.classList.add('hidden');
-}
